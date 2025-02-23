@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Page with Cat Facts</title>
+  <link rel = "stylesheet" href = "src\css\main.css">
+</head>
+<body>
+
+<header>
+  <h1>Welcome to the Cat Page</h1>
+</header>
+
+<div class="container">
+  <nav>
+    <h3>Navigation</h3>
+    <a href="#">Home</a>
+    <a href="#game">Game</a>
+    <a href="#cat-facts">Cat Facts</a>
+    <a href="#about">About</a>
+  </nav>
+
+  <main>
+    <section class="hero">
+    </section>
+    <p id = "game"></p>
+    <section class="game">
+      <h2>Game Section</h2>
+      <canvas class = "board"></canvas>
+      <script type="module" src="src\js\game\preload.js" defer></script>
+      <script type="module" src="src\js\game\game.js" defer></script>
+    </section>
+    
+    <section class = "scroll-container">
+        <div class="scroll-text">
+          Cat Facts! • Cat Facts! • Cat Facts! • Cat Facts! • Cat Facts! • Cat Facts! • Cat Facts! • Cat Facts! • Cat Facts! • Cat Facts! • Cat Facts! • Cat Facts! • Cat Facts! • Cat Facts! • Cat Facts! • Cat Facts! • Cat Facts! • Cat Facts! • Cat Facts! • Cat Facts! • Cat Facts! • 
+        </div>
+    </section>
+
+    <p id = "cat-facts"></p>
+    <section   class="cat-facts">
+      <h2>Random Cat Facts</h2>
+      <div class="ct-fact">
+        
+      </div>
+      <button class = "cat-btn" id="getCatFact">
+        <img src = "src/images/catBTN.png">
+      </button>
+    
+    </section>
+    
+
+    
+  </main>
+</div>
+
+<footer>
+  <p>© 2025 Cat Page | All Rights Reserved</p>
+</footer>
+
+<div id="popup" class="popup-container">
+  <div class="popup-content">
+      <span id="closePopup" class="close">&times;</span>
+      <h2>Welcome to the Cat Page</h2>
+      <img src = "src/images/catPOPUP.png">
+      <p>A whole web page dedicated to cats.</p>
+      <script src="src\js\popup.js"></script>
+  </div>
+</div>
+
+<script src = "src\js\cat_facts.js"> </script>
+</body>
+</html>
